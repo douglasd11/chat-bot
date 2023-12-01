@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    
+   <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+            <span class="navbar-brand mb-0 h1 py-3">WenBot</span>
+            </div>
+        </nav>
+   </header>
+
+   <main>
+        <h2 class="titulo-main">WenBot <span>Asistente</span></h2>
+    
+    <div class="container-chat">
+        <div class="chat-header">
+            <div class="port">
+                <img src="https://cdn.chatbot.com/widget/61f28451fdd7c5000728b4f9/FPBAPaZFOOqqiCbV.png" class="logo" alt="">
+                <div>
+                    <h4>WenBot</h4>
+                    <p>Online</p>
+                </div>
+            </div>
+            <div class="button-close">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="chat-body" id="chat">
+
+            <!-- <div class="message">
+                <div class="text">
+                    <p>Este es un mensaje del bot. estoy probando agregando mas texto</p>
+                </div>
+            </div> -->
+
+            <!-- <div class="message">
+                <div class="input-wrapper">
+                    <div class="text-user">
+                        <p>Hola estoy bien</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="msg-buttons">
+                <div class="single-button">
+                    <span>Iniciar sesion</span>
+                </div>
+                <div class="single-button">
+                    <span>Registrarse</span>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="chat-message">
+            <input type="text" id="text_resp" placeholder="Escribe tu mensaje aquí">
+            <button id="btn_send"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve"><path fill="#d7d7d7" d="M22,11.7V12h-0.1c-0.1,1-17.7,9.5-18.8,9.1c-1.1-0.4,2.4-6.7,3-7.5C6.8,12.9,17.1,12,17.1,12H17c0,0,0-0.2,0-0.2c0,0,0,0,0,0c0-0.4-10.2-1-10.8-1.7c-0.6-0.7-4-7.1-3-7.5C4.3,2.1,22,10.5,22,11.7z"></path></svg></button>
+        </div>
+        <div class="chat-footer">
+            <p>wenBot</p>
+        </div>
+    </div>
+
+
+   </main>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
