@@ -151,7 +151,7 @@ function validarExisteUsuario(user) {
 
     let status = true
 
-    fetch("http://localhost:3001/api/usuario/obtenerUsuarios")
+    fetch("https://api-chatbot-omiw.onrender.com/api/usuario/obtenerUsuarios")
     .then((response) => response.json())
     .then((response) => {
 
@@ -177,7 +177,7 @@ function validarExisteUsuario(user) {
 
 function registrarUsuario (clave) {
 
-    fetch("http://localhost:3001/api/usuario/agregarUsuario", {
+    fetch("https://api-chatbot-omiw.onrender.com/api/usuario/agregarUsuario", {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -201,7 +201,7 @@ function loguearUsuario (clave) {
 
     let status = false
 
-    fetch("http://localhost:3001/api/usuario/obtenerUsuarios")
+    fetch("https://api-chatbot-omiw.onrender.com/api/usuario/obtenerUsuarios")
     .then((response) => response.json())
     .then((response) => {
         
@@ -287,7 +287,7 @@ const enviarMensajeCatalogo = () => {
 
 function listarProductos (categoria) {
 
-    fetch("http://localhost:3001/api/producto/obtenerProductos")
+    fetch("https://api-chatbot-omiw.onrender.com/api/producto/obtenerProductos")
     .then((response) => response.json())
     .then((response) => {
         
